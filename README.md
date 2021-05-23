@@ -1,1 +1,3 @@
 # nodejs-socket.io-v2.0
+This is the modified version of my previous socket programming project where we can select various private rooms and multiple user can create a group.
+Work is on progress...
