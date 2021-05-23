@@ -26,7 +26,6 @@ socket.on('message', message => {
 	chatMessages.scrollTop = chatMessages.scrollHeight;
 });
 
-// Message submit
 chatForm.addEventListener('submit', event => {
 	event.preventDefault();
 	const msg = event.target.elements.msg.value;
@@ -35,7 +34,6 @@ chatForm.addEventListener('submit', event => {
 	event.target.elements.msg.focus();
 });
 
-// Output message to DOM
 function outputMessage(message) {
 	const div = document.createElement('div');
 	div.classList.add('message');
