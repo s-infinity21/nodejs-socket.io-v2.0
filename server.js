@@ -9,9 +9,11 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
 
+// Set static folders
 app.use(express.static(path.join(__dirname, 'public')));
 const appName = 'RealTalk App';
 
+// Run when client connects
 io.on('connection', socket => {
 	socket.on('join-room', ({ username, room }) => {
 		const user = joinUser(socket.id, username, room);
